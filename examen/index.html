@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Tecnologia</title>
+</head>
+
+<body>
+    <label for="codigo">Ingrese el ID</label>
+    <input type="number" id="codigo" placeholder="Ingrese Codigo">
+    <button onclick="buscarProducto()">Buscar</button><br><br>
+
+
+    <label for="producto">Ingrese el Producto</label>
+    <input type="text" id="producto" placeholder="Ingrese Producto"><br><br>
+
+
+    <label for="marca">Ingrese la Marca</label>
+    <input type="text" id="marca" placeholder="Ingrese la Marca"><br><br>
+
+
+    <label for="precio">Ingrese su Precio</label>
+    <input type="number" id="precio" placeholder="Ingrese el Precio"><br><br>
+
+    <label for="fecha">Ingrese la Fecha Inicial</label>
+    <input type="date" id="fecha" placeholder="Ingrese la Fecha"><br><br>
+
+    <button onclick="cargarProducto()">Cargar</button>
+    <button onclick="actualizarProducto()">Actualizar</button>
+    <button onclick="eliminarProducto()">Eliminar</button>
+
+    <br><br>
+    <div class="container">
+
+        <table border="1px" width="55%" id="productos">
+            <tr>
+                <th width=>Codigo</th>
+                <th width=>Nombre</th>
+                <th width=>Marca</th>
+                <th width=>Precio</th>
+                <th width=>Fecha</th>
+
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Sistema de Gestión de Inventario de Ventas y Compras</h1>
+
+    <h2>Productos</h2>
+    <form id="form-productos">
+        <input type="text" id="producto" placeholder="Producto" required>
+        <input type="number" id="codigo" placeholder="Codigo" required>
+        <button type="submit">Agregar Producto</button>
+        <br><br>
+    </form>
+    <table border="1px" width="60%" style="margin-left: auto; margin-right: auto; background-color: cornflowerblue;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Codigo</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProductos"></tbody>
+    </table>
+
+    <h2>Entradas</h2>
+    <form id="form-entradas">
+        <input type="text" id="productoEntrada" placeholder="Producto" required>
+        <input type="number" id="codigoEntrada" placeholder="Codigo" required>
+        <input type="date" id="fechaEntrada" required> 
+        <input type="number" id="cantidadEntrada" placeholder="Cantidad" required>
+        <button type="submit">Registrar</button>
+        <br><br>
+    </form>
+    <table border="1px" width="60%" style="margin-left: auto; margin-right: auto; background-color: rgb(100, 237, 111);">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Codigo</th>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="tablaEntradas"></tbody>
+    </table>
+
+    <h2>Salidas</h2>
+    <form id="form-salidas">
+        <input type="text" id="productoSalida" placeholder="Producto" required>
+        <input type="number" id="codigoSalida" placeholder="Codigo" required>
+        <input type="date" id="fechaSalida" required> 
+        <input type="number" id="cantidadSalida" placeholder="Cantidad" required>
+        <button type="submit">Registrar</button>
+        <br><br>
+    </form>
+    <table border="1px" width="60%" style="margin-left: auto; margin-right: auto; background-color: rgb(237, 100, 180);">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Codigo</th>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="tablaSalidas"></tbody>
+    </table>
+
+
+
+    <script src="js/apps.js"></script>
+</body>
+</html>

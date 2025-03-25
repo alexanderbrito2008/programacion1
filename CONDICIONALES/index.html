@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+
+<body>
+    <div class="container" width="100%">
+        <h1 style="text-align: center;">Condicionantes Simples</h1>
+        <table border="0px" width="50%" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td width="40%"><label for="Nombre">Nombre de Estudiante</label></td>
+                <td width="60%"><input type="text" placeholder="Ingrese su Nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="materia">Ingrese la materia</label></td>
+                <td><select name="materia" id="materia" size="1">
+                        <option value="español">Español</option>
+                        <option value="matematicas">Matematicas</option>
+                        <option value="ingles">Ingles</option>
+                        <option value="programacion">Programacion</option>
+                        <option value="informatica">Informatica</option>
+                        <option value="ofimatica">Ofimatica</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="tipo de clase">Seleccione el modo de clase</label></td>
+                <td>
+                    <input type="radio" id="presencial" name="modoClase" value="presencial">
+                    <label for="presencial">Presencial</label>
+                    <input type="radio" id="virtual" name="modoClase" value="virtual">
+                    <label for="virtual">Virtual</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nota1">Ingrese Nota1</label></td>
+                <td><input type="number" id="nota1" placeholder="Ingrese Nota 1"></td>
+            </tr>
+            <tr>
+                <td><label for="nota2">Ingrese Nota2</label></td>
+                <td><input type="number" id="nota2" placeholder="Ingrese Nota 2"></td>
+            </tr>
+            <tr>
+                <td><label for="nota3">Ingrese Nota3</label></td>
+                <td><input type="number" id="nota3" placeholder="Ingrese Nota 3"></td>
+            </tr>
+            <tr>
+                <td><label for="nota4">Ingrese Nota4</label></td>
+                <td><input type="number" id="nota4" placeholder="Ingrese Nota 4"></td>
+            </tr>
+            <tr>
+                <td><label for="promedio">El promedio alcanzado es:</label></td>
+                <td><input type="text" id="promedio" readonly placeholder="Promedio"></td>
+            </tr>
+            <tr>
+                <td><br><button onclick="calcular()">Calcular Promedio</button></td>
+                <td><br><button onclick="limpiar()">Limpiar</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
